@@ -1,0 +1,17 @@
+Desafio de Projeto: Simulação de Malwares e Estratégias de Defesa em Python
+
+Resumo do Aprendizado
+
+Neste módulo prático, explorei o funcionamento interno de ameaças digitais através da simulação conceitual de dois dos principais tipos de malwares: Ransomware e Keylogger. O foco do estudo baseou-se na compreensão das estruturas de código em Python para entender como os dados são comprometidos ou exfiltrados e, a partir dessa análise, definir estratégias eficientes de deteção e prevenção no âmbito da cibersegurança.
+
+Na primeira etapa dedicada ao Ransomware, compreendi os conceitos e o ciclo de vida deste tipo de ataque, desde a fase de preparação do ambiente isolado até à criação das funções de criptografia simétrica (utilizando bibliotecas como a `cryptography` e o seu módulo Fernet). Analisei detalhadamente a lógica responsável por percorrer o sistema de ficheiros, criptografar dados de teste em tempo de execução e gerar a respetiva nota de resgate. Adicionalmente, desenvolvi a lógica inversa de descriptografia para demonstrar o processo de recuperação de ficheiros e a importância da gestão adequada de chaves criptográficas.
+
+Na segunda etapa, abordei o desenvolvimento de um Keylogger funcional em Python. Estudei a captação de eventos de teclado (através da biblioteca `pynput`), a persistência dos registos em ficheiros de texto e as técnicas de furtividade para execução do script em segundo plano sem alertar o utilizador. Além disso, examinei o mecanismo de exfiltração de dados, simulando a transmissão remota das informações capturadas para o atacante via protocolos de e-mail (`smtplib`) num ambiente estritamente controlado.
+
+Por fim, o módulo culminou numa reflexão aprofundada sobre as medidas de defesa e proteção necessárias contra estas ameaças. A análise prática permitiu evidenciar a relevância de estratégias defensivas consolidadas, como a implementação de políticas rigorosas de backup (regra 3-2-1), o uso de soluções EDR e antivírus baseados em comportamento, a aplicação de autenticação multifator (MFA) para mitigar a captura de credenciais por keyloggers, e a consciencialização constante dos utilizadores contra engenharia social e *phishing*.
+
+---
+Medidas de Mitigação e Defesa
+- **Contra Ransomware:** Políticas de backup offline e imutáveis, controlo de acessos e privilégios mínimos, e soluções de EDR com monitorização de comportamento anómalo em ficheiros.
+- **Contra Keyloggers:** Autenticação Multifator (MFA), utilização de teclados virtuais para dados sensíveis, monitorização de tráfego de rede para deteção de exfiltração e segmentação de rede.
+- **Defesa Geral:** Atualização contínua de software/patches de segurança e treino de consciencialização em cibersegurança.

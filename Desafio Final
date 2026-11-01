@@ -1,0 +1,18 @@
+Desafio de Projeto: Criando um Agente Especialista em Cibersegurança (AppSec) com o DIO Agent
+
+Resumo do Aprendizado
+
+Neste projeto, explorei a capacidade de expandir e personalizar o **DIO Agent (Hermes)** para atuar como um assistente inteligente especializado em segurança de aplicações (*AppSec*). O objetivo central consistiu em transformar um agente de inteligência artificial genérico num analista de segurança estruturado, capaz de avaliar o contexto, calcular impacto, probabilidade e severidade de falhas, e orientar correções seguras[cite: 3].
+
+A abordagem prática e conceitual do desafio envolveu a estruturação de componentes fundamentais:
+- **Criação de Novas Skills (`skills/`):** Desenvolvimento de regras comportamentais e roteiros técnicos (como uma skill de *vulnerability-analysis*) orientados a fichas de identificação de falhas, integrando conceitos da matriz **MITRE ATT&CK** e boas práticas de desenvolvimento seguro[cite: 3].
+- **Arquivos de Conhecimento (`agent/knowledge/`):** Documentação de conceitos de segurança-base (*security-basics.md*) para que o agente consulte fundamentos de integridade, confidencialidade e disponibilidade (Tríade CIA) ao analisar cenários de código vulnerável[cite: 3].
+- **Ajustes de Persona (`agent/persona.md` e `AGENTS.md`):** Configuração do perfil do especialista em AppSec, definindo que o agente jamais forneça comandos cegos ou respostas diretas sem antes compreender o contexto operacional, avaliar o risco e propor a mitigação adequada[cite: 3].
+
+Por fim, o projeto simulou a análise de cenários críticos — como vulnerabilidades de *SQL Injection* em aplicações web (`app.py`) —, demonstrando como a IA pode atuar no ciclo de desenvolvimento seguro (DevSecOps) para revisar código, apontar falhas de forma analítica e recomendar a refatoração para consultas parametrizadas[cite: 3].
+
+---
+Principais Benefícios da Abordagem
+- **Análise Contextual:** O agente prioriza o entendimento do impacto corporativo em vez de executar comandos automáticos.
+- **Mitigação Proativa:** Foco na reescrita de código seguro e adoção de padrões defensivos logo na fase de desenvolvimento.
+- **Documentação Clara:** Estruturação padronizada de skills e conhecimentos reutilizables no ecossistema do DIO Agent.

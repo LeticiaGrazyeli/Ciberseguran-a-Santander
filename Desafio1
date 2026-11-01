@@ -1,0 +1,18 @@
+Desafio de Projeto: Auditoria de Credenciais e Força Bruta
+
+Resumo do Aprendizado
+
+Durante este módulo de estudos, explorei de forma aprofundada as principais técnicas e ferramentas empregadas em auditorias de segurança e testes de intrusão, com foco na avaliação da força de credenciais e no mapeamento de superfícies de ataque. Inicialmente, consolidei a compreensão teórica sobre vetores de ataque como o *Password Spraying* e o *Credential Stuffing*, compreendendo como os atacantes exploram o reuso de credenciais vazadas e evitam políticas de bloqueio automatizadas para comprometer contas de utilizador.
+
+Na parte prática, analisei o funcionamento de um conjunto diversificado de ferramentas especializadas integradas no Kali Linux, incluindo o Hydra, Ncrack, John the Ripper, WPScan, Patator e Medusa. Cada uma dessas soluções foi avaliada quanto aos seus cenários ideais de aplicação, cobrindo desde a quebra de senhas *offline* via análise de *hashes* até ataques *online* direcionados a protocolos de rede e aplicações web específicas, como a plataforma WordPress.
+
+Para contextualizar o uso dessas ferramentas num cenário realista e seguro, configurei um ambiente de laboratório isolado composto pelo Kali Linux atuando como máquina atacante e pelo Metasploitable 2 como sistema alvo vulnerável. Através deste ambiente, pratiquei a construção de *wordlists* personalizadas e listas de utilizadores para simular ataques em cadeia, unindo a enumeração de serviços (como o protocolo SMB) à execução de *password spraying* e ataques a formulários de autenticação web.
+
+Por fim, a validação dos acessos através de utilitários como o smbclient permitiu simular o impacto de um cenário corporativo mal configurado. Todo este processo evidenciou o papel crítico que a gestão de senhas fortes, o controlo rigoroso de privilégios e a monitorização de autenticação desempenham na defesa de infraestruturas contra vetores de invasão baseados em força bruta.
+
+---
+ Medidas de Mitigação Recomendadas
+- Implementação de políticas de senhas fortes e complexas.
+- Bloqueio temporário de contas (*Account Lockout*) após múltiplas tentativas falhadas.
+- Aplicação de Autenticação Multifator (MFA).
+- Monitorização contínua de logs de autenticação.
